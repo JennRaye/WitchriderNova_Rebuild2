@@ -26,6 +26,12 @@ public class WitchScript : MonoBehaviour {
 
 
 	public Vector3 VelocitySave;
+
+	public Transform CameraTrans;
+	public Transform CameraTarget;
+
+	public float CameraSpeed;
+	public float CameraRotSpeed;
 	void Start() {
 		controller = GetComponent<CharacterController>();
 	}
@@ -39,12 +45,18 @@ public class WitchScript : MonoBehaviour {
 
 
 
-
-		if (Input.GetButton ("Accelerate")) {
-			if (speed < topSpeed)
-				speed += Acceleration * Time.deltaTime;
-			else
-				speed = topSpeed;
+		if (Input.GetAxis ("Horizontal") == 0) {
+			if (Input.GetButton ("Accelerate")) {
+				if (speed < topSpeed)
+					speed += Acceleration * Time.deltaTime;
+				else
+					speed = topSpeed;
+			} else {
+				if (speed > 0)
+					speed -= SlowdownAcceleration * Time.deltaTime;
+				else
+					speed = 0;
+			}
 		} else {
 			if (speed > 0)
 				speed -= SlowdownAcceleration * Time.deltaTime;
@@ -100,6 +112,13 @@ public class WitchScript : MonoBehaviour {
 
 		thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed * Time.deltaTime, 0);
 
+
+
+
+		// CameraTrans.eulerAngles = new Vector3 (Mathf.Lerp(CameraTrans.eulerAngles.x, thisTrans.eulerAngles.x, Time.deltaTime*5), CameraTrans.eulerAngles.y, Mathf.Lerp(CameraTrans.eulerAngles.z, Input.GetAxis ("Horizontal")*5f, Time.deltaTime*4));
+		CameraTrans.rotation = new Quaternion( Mathf.Lerp(CameraTrans.rotation.x, CameraTarget.rotation.x, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.y, CameraTarget.rotation.y, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.z, CameraTarget.rotation.z, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.w, CameraTarget.rotation.w, Time.deltaTime*CameraRotSpeed) );
+
+		CameraTrans.position = new Vector3( Mathf.Lerp(CameraTrans.position.x, CameraTarget.position.x, Time.deltaTime*CameraSpeed), Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y, Time.deltaTime*CameraSpeed), Mathf.Lerp(CameraTrans.position.z, CameraTarget.position.z, Time.deltaTime*CameraSpeed) );
 
 		if (Input.GetButton("Fly"))
 			moveDirection.y = jumpSpeed * Time.deltaTime;
