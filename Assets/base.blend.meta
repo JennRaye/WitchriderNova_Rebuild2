@@ -1,0 +1,937 @@
+fileFormatVersion: 2
+guid: 3a31178fdac7a404ab52133a7c9ad971
+timeCreated: 1498362004
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: Bone
+    100006: Bone_0
+    100008: broom
+    100010: Calf_l
+    100012: Calf_r
+    100014: Clavicle_l
+    100016: Clavicle_r
+    100018: Cube_000
+    100020: Cube_002
+    100022: Forearm_l
+    100024: Forearm_r
+    100026: Head
+    100028: Heel_l
+    100030: Heel_r
+    100032: IndexF_l_001
+    100034: IndexF_l_002
+    100036: IndexF_l_003
+    100038: IndexF_r_001
+    100040: IndexF_r_002
+    100042: IndexF_r_003
+    100044: Lowerback
+    100046: MiddleF_l_001
+    100048: MiddleF_l_002
+    100050: MiddleF_l_003
+    100052: MiddleF_r_001
+    100054: MiddleF_r_002
+    100056: MiddleF_r_003
+    100058: Neck
+    100060: Pelvis
+    100062: Pinky_l_001
+    100064: Pinky_l_002
+    100066: Pinky_l_003
+    100068: Pinky_r_001
+    100070: Pinky_r_002
+    100072: Pinky_r_003
+    100074: RingF_l_001
+    100076: RingF_l_002
+    100078: RingF_l_003
+    100080: RingF_r_001
+    100082: RingF_r_002
+    100084: RingF_r_003
+    100086: runibroom
+    100088: Thigh_l
+    100090: Thigh_r
+    100092: Thumb_l_001
+    100094: Thumb_l_002
+    100096: Thumb_l_003
+    100098: Thumb_r_001
+    100100: Thumb_r_002
+    100102: Thumb_r_003
+    100104: Toe_l
+    100106: Toe_r
+    100108: UpperArm_l
+    100110: UpperArm_r
+    100112: Upperback
+    100114: Wrist_l
+    100116: Wrist_r
+    400000: Armature
+    400002: //RootNode
+    400004: Bone
+    400006: Bone_0
+    400008: broom
+    400010: Calf_l
+    400012: Calf_r
+    400014: Clavicle_l
+    400016: Clavicle_r
+    400018: Cube_000
+    400020: Cube_002
+    400022: Forearm_l
+    400024: Forearm_r
+    400026: Head
+    400028: Heel_l
+    400030: Heel_r
+    400032: IndexF_l_001
+    400034: IndexF_l_002
+    400036: IndexF_l_003
+    400038: IndexF_r_001
+    400040: IndexF_r_002
+    400042: IndexF_r_003
+    400044: Lowerback
+    400046: MiddleF_l_001
+    400048: MiddleF_l_002
+    400050: MiddleF_l_003
+    400052: MiddleF_r_001
+    400054: MiddleF_r_002
+    400056: MiddleF_r_003
+    400058: Neck
+    400060: Pelvis
+    400062: Pinky_l_001
+    400064: Pinky_l_002
+    400066: Pinky_l_003
+    400068: Pinky_r_001
+    400070: Pinky_r_002
+    400072: Pinky_r_003
+    400074: RingF_l_001
+    400076: RingF_l_002
+    400078: RingF_l_003
+    400080: RingF_r_001
+    400082: RingF_r_002
+    400084: RingF_r_003
+    400086: runibroom
+    400088: Thigh_l
+    400090: Thigh_r
+    400092: Thumb_l_001
+    400094: Thumb_l_002
+    400096: Thumb_l_003
+    400098: Thumb_r_001
+    400100: Thumb_r_002
+    400102: Thumb_r_003
+    400104: Toe_l
+    400106: Toe_r
+    400108: UpperArm_l
+    400110: UpperArm_r
+    400112: Upperback
+    400114: Wrist_l
+    400116: Wrist_r
+    4300000: runibroom
+    4300002: Cube_002
+    4300004: Cube_000
+    7400000: Default Take
+    7400002: Boost
+    7400004: broomAction
+    7400006: Flying
+    7400008: Idle
+    7400010: TurnLeft
+    7400012: TurnRight
+    9500000: //RootNode
+    13700000: Cube_000
+    13700002: Cube_002
+    13700004: runibroom
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Boost
+      takeName: Boost
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Lowerback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002/IndexF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002/MiddleF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002/Pinky_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002/RingF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002/Thumb_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002/IndexF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002/MiddleF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002/Pinky_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002/RingF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002/Thumb_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck/Head
+        weight: 1
+      - path: Armature/Bone_0/Pelvis
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l/Toe_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r/Toe_r
+        weight: 1
+      - path: broom
+        weight: 1
+      - path: broom/Bone
+        weight: 1
+      - path: Cube_000
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: runibroom
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Flying
+      takeName: Flying
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Lowerback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002/IndexF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002/MiddleF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002/Pinky_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002/RingF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002/Thumb_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002/IndexF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002/MiddleF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002/Pinky_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002/RingF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002/Thumb_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck/Head
+        weight: 1
+      - path: Armature/Bone_0/Pelvis
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l/Toe_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r/Toe_r
+        weight: 1
+      - path: broom
+        weight: 1
+      - path: broom/Bone
+        weight: 1
+      - path: Cube_000
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: runibroom
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Lowerback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002/IndexF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002/MiddleF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002/Pinky_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002/RingF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002/Thumb_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002/IndexF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002/MiddleF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002/Pinky_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002/RingF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002/Thumb_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck/Head
+        weight: 1
+      - path: Armature/Bone_0/Pelvis
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l/Toe_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r/Toe_r
+        weight: 1
+      - path: broom
+        weight: 1
+      - path: broom/Bone
+        weight: 1
+      - path: Cube_000
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: runibroom
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnLeft
+      takeName: TurnLeft
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Lowerback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002/IndexF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002/MiddleF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002/Pinky_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002/RingF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002/Thumb_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002/IndexF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002/MiddleF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002/Pinky_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002/RingF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002/Thumb_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck/Head
+        weight: 1
+      - path: Armature/Bone_0/Pelvis
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l/Toe_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r/Toe_r
+        weight: 1
+      - path: broom
+        weight: 1
+      - path: broom/Bone
+        weight: 1
+      - path: Cube_000
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: runibroom
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnRight
+      takeName: TurnRight
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone_0
+        weight: 1
+      - path: Armature/Bone_0/Lowerback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/IndexF_l_001/IndexF_l_002/IndexF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/MiddleF_l_001/MiddleF_l_002/MiddleF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Pinky_l_001/Pinky_l_002/Pinky_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/RingF_l_001/RingF_l_002/RingF_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_l/UpperArm_l/Forearm_l/Wrist_l/Thumb_l_001/Thumb_l_002/Thumb_l_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/IndexF_r_001/IndexF_r_002/IndexF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/MiddleF_r_001/MiddleF_r_002/MiddleF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Pinky_r_001/Pinky_r_002/Pinky_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/RingF_r_001/RingF_r_002/RingF_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Clavicle_r/UpperArm_r/Forearm_r/Wrist_r/Thumb_r_001/Thumb_r_002/Thumb_r_003
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck
+        weight: 1
+      - path: Armature/Bone_0/Lowerback/Upperback/Neck/Head
+        weight: 1
+      - path: Armature/Bone_0/Pelvis
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_l/Calf_l/Heel_l/Toe_l
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r
+        weight: 1
+      - path: Armature/Bone_0/Pelvis/Thigh_r/Calf_r/Heel_r/Toe_r
+        weight: 1
+      - path: broom
+        weight: 1
+      - path: broom/Bone
+        weight: 1
+      - path: Cube_000
+        weight: 1
+      - path: Cube_002
+        weight: 1
+      - path: runibroom
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
