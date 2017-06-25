@@ -92,7 +92,7 @@ public class WitchScript : MonoBehaviour {
 
 
 
-		Debug.Log (controller.velocity);
+		// Debug.Log (controller.velocity);
 
 
 
