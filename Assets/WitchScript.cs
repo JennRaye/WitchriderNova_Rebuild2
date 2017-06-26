@@ -160,7 +160,7 @@ public class WitchScript : MonoBehaviour {
 
 
 
-		thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * (rotSpeed - (speed / topSpeed)*100) * Time.deltaTime, 0);
+		thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * (rotSpeed - (speed / topSpeed)*150) * Time.deltaTime, 0);
 		//if (Input.GetAxis ("Accelerate") < 0)
 		if ((speed / topSpeed) < 0.5f) {
 		//	thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed * Time.deltaTime*0.25f, 0);
