@@ -65,7 +65,7 @@ public class WitchScript : MonoBehaviour {
 
 
 		// if (Input.GetAxis ("Horizontal") == 0) {
-		if (Input.GetAxis ("Accelerate") > 0) {
+		if (Input.GetAxis ("Brake") == 0) {
 			if (speed < topSpeed)
 				speed += Acceleration * Time.deltaTime;
 			else
