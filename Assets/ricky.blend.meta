@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: b97f605c17d370548b7f28a474af68ac
+timeCreated: 1498843594
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Bone_0
+    100006: broom
+    100008: Calf_l
+    100010: Calf_r
+    100012: Circle
+    100014: Clavicle_l
+    100016: Clavicle_r
+    100018: Cube_000
+    100020: Cube_001
+    100022: Cube_002
+    100024: Cube_003
+    100026: Forearm_l
+    100028: Forearm_r
+    100030: Head
+    100032: Heel_l
+    100034: Heel_r
+    100036: IndexF_l_001
+    100038: IndexF_l_002
+    100040: IndexF_l_003
+    100042: IndexF_r_001
+    100044: IndexF_r_002
+    100046: IndexF_r_003
+    100048: Lowerback
+    100050: MiddleF_l_001
+    100052: MiddleF_l_002
+    100054: MiddleF_l_003
+    100056: MiddleF_r_001
+    100058: MiddleF_r_002
+    100060: MiddleF_r_003
+    100062: Neck
+    100064: Pelvis
+    100066: Pinky_l_001
+    100068: Pinky_l_002
+    100070: Pinky_l_003
+    100072: Pinky_r_001
+    100074: Pinky_r_002
+    100076: Pinky_r_003
+    100078: //RootNode
+    100080: RingF_l_001
+    100082: RingF_l_002
+    100084: RingF_l_003
+    100086: RingF_r_001
+    100088: RingF_r_002
+    100090: RingF_r_003
+    100092: Thigh_l
+    100094: Thigh_r
+    100096: Thumb_l_001
+    100098: Thumb_l_002
+    100100: Thumb_l_003
+    100102: Thumb_r_001
+    100104: Thumb_r_002
+    100106: Thumb_r_003
+    100108: Toe_l
+    100110: Toe_r
+    100112: UpperArm_l
+    100114: UpperArm_r
+    100116: Upperback
+    100118: Wrist_l
+    100120: Wrist_r
+    400000: Armature
+    400002: Bone
+    400004: Bone_0
+    400006: broom
+    400008: Calf_l
+    400010: Calf_r
+    400012: Circle
+    400014: Clavicle_l
+    400016: Clavicle_r
+    400018: Cube_000
+    400020: Cube_001
+    400022: Cube_002
+    400024: Cube_003
+    400026: Forearm_l
+    400028: Forearm_r
+    400030: Head
+    400032: Heel_l
+    400034: Heel_r
+    400036: IndexF_l_001
+    400038: IndexF_l_002
+    400040: IndexF_l_003
+    400042: IndexF_r_001
+    400044: IndexF_r_002
+    400046: IndexF_r_003
+    400048: Lowerback
+    400050: MiddleF_l_001
+    400052: MiddleF_l_002
+    400054: MiddleF_l_003
+    400056: MiddleF_r_001
+    400058: MiddleF_r_002
+    400060: MiddleF_r_003
+    400062: Neck
+    400064: Pelvis
+    400066: Pinky_l_001
+    400068: Pinky_l_002
+    400070: Pinky_l_003
+    400072: Pinky_r_001
+    400074: Pinky_r_002
+    400076: Pinky_r_003
+    400078: //RootNode
+    400080: RingF_l_001
+    400082: RingF_l_002
+    400084: RingF_l_003
+    400086: RingF_r_001
+    400088: RingF_r_002
+    400090: RingF_r_003
+    400092: Thigh_l
+    400094: Thigh_r
+    400096: Thumb_l_001
+    400098: Thumb_l_002
+    400100: Thumb_l_003
+    400102: Thumb_r_001
+    400104: Thumb_r_002
+    400106: Thumb_r_003
+    400108: Toe_l
+    400110: Toe_r
+    400112: UpperArm_l
+    400114: UpperArm_r
+    400116: Upperback
+    400118: Wrist_l
+    400120: Wrist_r
+    2300000: Cube_001
+    3300000: Cube_001
+    4300000: Circle
+    4300002: Cube_003
+    4300004: Cube_001
+    4300006: Cube_002
+    4300008: Cube_000
+    7400000: Default Take
+    7400002: Boost
+    7400004: broomAction
+    7400006: Flying
+    7400008: Idle
+    7400010: TurnLeft
+    7400012: TurnRight
+    9500000: //RootNode
+    13700000: Circle
+    13700002: Cube_000
+    13700004: Cube_002
+    13700006: Cube_003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
