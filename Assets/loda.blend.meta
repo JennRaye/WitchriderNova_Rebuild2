@@ -237,6 +237,7 @@ ModelImporter:
     7400004: going-item
     7400006: Idle
     7400008: idle-item
+    7400010: ArmatureAction
     9500000: //RootNode
     13700000: Cube_000
     13700002: Cube_001

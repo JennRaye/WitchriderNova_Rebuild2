@@ -67,6 +67,7 @@ ModelImporter:
     100118: Upperback
     100120: Wrist_l
     100122: Wrist_r
+    100124: broomarmature
     400000: Armature
     400002: Armature_001
     400004: Bone
@@ -129,6 +130,7 @@ ModelImporter:
     400118: Upperback
     400120: Wrist_l
     400122: Wrist_r
+    400124: broomarmature
     2300000: runibroom
     3300000: runibroom
     4300000: Cylinder
@@ -144,6 +146,7 @@ ModelImporter:
     13700004: Cube_002
     13700006: Cylinder
     13700008: Plane_005
+    13700010: runibroom
   materials:
     importMaterials: 1
     materialName: 0

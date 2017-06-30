@@ -64,6 +64,7 @@ ModelImporter:
     100112: Upperback
     100114: Wrist_l
     100116: Wrist_r
+    100118: broomarmature
     400000: Armature
     400002: //RootNode
     400004: Bone
@@ -123,6 +124,7 @@ ModelImporter:
     400112: Upperback
     400114: Wrist_l
     400116: Wrist_r
+    400118: broomarmature
     4300000: runibroom
     4300002: Cube_002
     4300004: Cube_000
