@@ -51,6 +51,20 @@ public class WitchScript : MonoBehaviour {
 	public float TurnFl;
 	public float AccelFl;
 
+
+	public Transform CameraTargetGround;
+	public Transform CameraTargetFlying;
+
+	public float CameraYTilt;
+	public float CameraYRaise;
+	public float TurnSpeedDec;
+	public Transform WitchModel;
+	public float WitchTiltAngle;
+	public float WitchTiltAngleMax;
+	public float WitchTiltAngleSpeed;
+	public float BobbingHeight;
+	public float BobbingSpeed;
+	public int BobbingMode;
 	// public Quaternion thisRot;
 	void Start() {
 		controller = GetComponent<CharacterController>();
@@ -65,9 +79,9 @@ public class WitchScript : MonoBehaviour {
 
 
 		// if (Input.GetAxis ("Horizontal") == 0) {
-		if (Input.GetAxis ("Brake") == 0) {
+		if (Input.GetAxis ("Brake") == 0 && Momentum == 0) {
 			if (speed < topSpeed)
-				speed += Acceleration * Time.deltaTime;
+				speed = speed + (Acceleration * Time.deltaTime);
 			else
 				speed = topSpeed;
 		} else {
@@ -112,6 +126,9 @@ public class WitchScript : MonoBehaviour {
 
 
 		moveDirection = transform.TransformDirection (moveDirection);
+
+
+
 
 //		if (Input.GetAxis ("Horizontal") != 0){
 //			if (Momentum == 0) {
@@ -160,7 +177,7 @@ public class WitchScript : MonoBehaviour {
 
 
 
-		thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * (rotSpeed - (speed / topSpeed)*150) * Time.deltaTime, 0);
+		thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * (rotSpeed - ((speed - TurnSpeedDec) / topSpeed)*150) * Time.deltaTime, 0);
 		//if (Input.GetAxis ("Accelerate") < 0)
 		if ((speed / topSpeed) < 0.5f) {
 		//	thisTrans.Rotate (0, Input.GetAxis ("Horizontal") * rotSpeed * Time.deltaTime*0.25f, 0);
@@ -168,8 +185,11 @@ public class WitchScript : MonoBehaviour {
 
 
 
-		TurnFl = Mathf.Lerp (TurnFl, Input.GetAxis ("Horizontal"), Time.deltaTime * 3);
-			
+		// TurnFl = Mathf.Lerp (TurnFl, Input.GetAxis ("Horizontal"), Time.deltaTime * 3);
+		TurnFl = WitchTiltAngle/WitchTiltAngleMax;
+
+
+
 		AccelFl = speed / topSpeed;
 
 		thisAnim.SetFloat ("Turn", TurnFl);
@@ -179,10 +199,97 @@ public class WitchScript : MonoBehaviour {
 
 
 
+
+		if (Input.GetAxis ("Horizontal") != 0) {
+			if (TurnSpeedDec < speed)
+				TurnSpeedDec += Time.deltaTime*12000;
+			else
+				TurnSpeedDec = speed;
+			if (TurnSpeedDec == speed) {
+				if (Momentum == 0) {
+		//			VelocitySave = controller.velocity;
+					Momentum = 1;
+				}
+			}
+
+			if (Momentum == 1) {
+		//		VelocitySave = new Vector3 (Mathf.Lerp (VelocitySave.x, 0, Time.deltaTime * 0.4f), VelocitySave.y, Mathf.Lerp (VelocitySave.z, 0, Time.deltaTime * 0.4f));
+		//		moveDirection = new Vector3(VelocitySave.x, moveDirection.y, VelocitySave.z);
+			}
+
+		} else {
+//			if (TurnSpeedDec > 0)
+//				TurnSpeedDec -= Time.deltaTime*12000;
+//			else
+//				TurnSpeedDec = 0;
+			TurnSpeedDec = 0;
+			Momentum = 0;
+		}
+
+
+
+
 		if (Input.GetButtonDown ("Fly")) {
 			if (flySpeed < 0)
 				flySpeed = 0;
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+		if (Input.GetAxis ("Horizontal") > 0) {
+			if (WitchTiltAngle < WitchTiltAngleMax) {
+				if (WitchTiltAngle < 0) WitchTiltAngle += Time.deltaTime * WitchTiltAngleSpeed;
+
+				WitchTiltAngle += Time.deltaTime * WitchTiltAngleSpeed;
+			}
+			else
+				WitchTiltAngle = WitchTiltAngleMax;
+		} else if (Input.GetAxis ("Horizontal") < 0) {
+			if (WitchTiltAngle > -WitchTiltAngleMax) {
+				if (WitchTiltAngle > 0) WitchTiltAngle -= Time.deltaTime * WitchTiltAngleSpeed;
+				WitchTiltAngle -= Time.deltaTime * WitchTiltAngleSpeed;
+			}
+			else
+				WitchTiltAngle = -WitchTiltAngleMax;
+		} else {
+			if (WitchTiltAngle >= -45 && WitchTiltAngle < -1) {
+				WitchTiltAngle += Time.deltaTime * WitchTiltAngleSpeed * 2;
+			} else if (WitchTiltAngle <= 45 && WitchTiltAngle > 1) {
+				WitchTiltAngle -= Time.deltaTime * WitchTiltAngleSpeed * 2;
+			} else
+				WitchTiltAngle = 0;
+		}
+
+
+
+		if (controller.isGrounded == false) {
+			WitchModel.localEulerAngles = new Vector3 (-flySpeed / 9f, WitchModel.localEulerAngles.y, WitchModel.localEulerAngles.z);
+
+		}
+		else WitchModel.localEulerAngles = new Vector3 (Mathf.Lerp(WitchModel.localEulerAngles.x, 0, Time.deltaTime*3), WitchModel.localEulerAngles.y, WitchModel.localEulerAngles.z);
+
+
+
+
+
+		WitchModel.localEulerAngles = new Vector3 (WitchModel.localEulerAngles.x, WitchTiltAngle, -WitchTiltAngle/3);
+
+
+
+
+
+
+
+
 
 
 		if (Input.GetButton ("Fly")) {
@@ -206,14 +313,50 @@ public class WitchScript : MonoBehaviour {
 
 		controller.Move(moveDirection * Time.deltaTime);
 
+		if (controller.isGrounded == false) {
+			if (CameraYTilt < 15)
+				CameraYTilt += Time.deltaTime*15f;
+			else
+				CameraYTilt = 15;
 
+			
+		} else {
+//			if (CameraYTilt > 0)
+//				CameraYTilt -= Time.deltaTime*50f;
+//			else
+//				CameraYTilt = 0;
+
+			CameraYTilt = Mathf.Lerp (CameraYTilt, 0, Time.deltaTime * 7f);
+		}
+
+
+		CameraYRaise=CameraYTilt/4;
+		CameraTarget.localEulerAngles = new Vector3 (CameraYTilt, CameraTarget.localEulerAngles.y, CameraTarget.localEulerAngles.z);
 		// CameraTrans.eulerAngles = new Vector3 (Mathf.Lerp(CameraTrans.eulerAngles.x, thisTrans.eulerAngles.x, Time.deltaTime*5), CameraTrans.eulerAngles.y, Mathf.Lerp(CameraTrans.eulerAngles.z, Input.GetAxis ("Horizontal")*5f, Time.deltaTime*4));
 		CameraTrans.rotation = new Quaternion( Mathf.Lerp(CameraTrans.rotation.x, CameraTarget.rotation.x, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.y, CameraTarget.rotation.y, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.z, CameraTarget.rotation.z, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.w, CameraTarget.rotation.w, Time.deltaTime*CameraRotSpeed) );
 		// Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y, Time.deltaTime*(CameraSpeed/2f))
-		CameraTrans.position = new Vector3( Mathf.Lerp(CameraTrans.position.x, CameraTarget.position.x, Time.deltaTime*CameraSpeed), Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y, Time.deltaTime*(CameraSpeed*2f)), Mathf.Lerp(CameraTrans.position.z, CameraTarget.position.z, Time.deltaTime*CameraSpeed) );
+			CameraTrans.position = new Vector3( Mathf.Lerp(CameraTrans.position.x, CameraTarget.position.x, Time.deltaTime*CameraSpeed), Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y+CameraYRaise, Time.deltaTime*(CameraSpeed*2f)), Mathf.Lerp(CameraTrans.position.z, CameraTarget.position.z, Time.deltaTime*CameraSpeed) );
+		if (controller.isGrounded == false)
+			BobbingMode = 1;
+		
+			switch (BobbingMode) {
+			case 0:	
+				if (BobbingHeight < 1)
+					BobbingHeight += Time.deltaTime * BobbingSpeed;
+				else
+					BobbingMode = 1;
+				break;
+			case 1:
+				if (BobbingHeight > 0)
+					BobbingHeight -= Time.deltaTime * BobbingSpeed;
+				else
+					BobbingMode = 0;
+
+				break;
+			}
 
 
-
+		WitchModel.position = new Vector3 (WitchModel.position.x, thisTrans.position.y + BobbingHeight, WitchModel.position.z);
 
 	}
 
@@ -224,5 +367,6 @@ public class WitchScript : MonoBehaviour {
 			Debug.Log ("hit!");
 		}
 	}
+
 
 }
