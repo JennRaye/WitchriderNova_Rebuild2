@@ -65,6 +65,8 @@ ModelImporter:
     100114: Upperback
     100116: Wrist_l
     100118: Wrist_r
+    100120: Circle
+    100122: Plane_006
     400000: Armature
     400002: Bone
     400004: Bone_0
@@ -125,12 +127,16 @@ ModelImporter:
     400114: Upperback
     400116: Wrist_l
     400118: Wrist_r
+    400120: Circle
+    400122: Plane_006
     2300000: Plane
     3300000: Plane
     4300000: Plane
     4300002: runibroom
     4300004: Cube_002
     4300006: Cube_000
+    4300008: Circle
+    4300010: Plane_006
     7400000: Default Take
     7400002: Boost
     7400004: broomAction
@@ -142,6 +148,9 @@ ModelImporter:
     13700000: Cube_000
     13700002: Cube_002
     13700004: runibroom
+    13700006: Circle
+    13700008: Plane
+    13700010: Plane_006
   materials:
     importMaterials: 1
     materialName: 0

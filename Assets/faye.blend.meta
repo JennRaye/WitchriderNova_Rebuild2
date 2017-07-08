@@ -68,6 +68,7 @@ ModelImporter:
     100120: Wrist_l
     100122: Wrist_r
     100124: broomarmature
+    100126: Cube_004
     400000: Armature
     400002: Armature_001
     400004: Bone
@@ -131,6 +132,7 @@ ModelImporter:
     400120: Wrist_l
     400122: Wrist_r
     400124: broomarmature
+    400126: Cube_004
     2300000: runibroom
     3300000: runibroom
     4300000: Cylinder
@@ -139,6 +141,7 @@ ModelImporter:
     4300006: Circle
     4300008: Plane_005
     4300010: runibroom
+    4300012: Cube_004
     7400000: Default Take
     9500000: //RootNode
     13700000: Circle
@@ -147,6 +150,7 @@ ModelImporter:
     13700006: Cylinder
     13700008: Plane_005
     13700010: runibroom
+    13700012: Cube_004
   materials:
     importMaterials: 1
     materialName: 0

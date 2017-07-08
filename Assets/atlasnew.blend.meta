@@ -65,6 +65,9 @@ ModelImporter:
     100114: Wrist_l
     100116: Wrist_r
     100118: Cube_001
+    100120: Circle
+    100122: Cube_003
+    100124: Cube_004
     400000: Armature
     400002: //RootNode
     400004: Bone
@@ -125,10 +128,18 @@ ModelImporter:
     400114: Wrist_l
     400116: Wrist_r
     400118: Cube_001
+    400120: Circle
+    400122: Cube_003
+    400124: Cube_004
+    2300000: Circle
+    3300000: Circle
     4300000: runibroom
     4300002: Cube_002
     4300004: Cube_000
     4300006: Cube_001
+    4300008: Circle
+    4300010: Cube_004
+    4300012: Cube_003
     7400000: Default Take
     7400002: Boost
     7400004: broomAction
@@ -141,6 +152,9 @@ ModelImporter:
     13700002: Cube_002
     13700004: runibroom
     13700006: Cube_001
+    13700008: Cube_003
+    13700010: Cube_004
+    13700012: Circle
   materials:
     importMaterials: 1
     materialName: 0

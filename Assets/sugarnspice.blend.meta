@@ -119,6 +119,7 @@ ModelImporter:
     100222: Wrist_l_0
     100224: Wrist_r
     100226: Wrist_r_0
+    100228: Circle
     400000: Armature
     400002: Armature_002
     400004: Bone
@@ -233,11 +234,13 @@ ModelImporter:
     400222: Wrist_l_0
     400224: Wrist_r
     400226: Wrist_r_0
+    400228: Circle
     4300000: Cube_005
     4300002: Cube_003
     4300004: runibroom
     4300006: Cube_002
     4300008: Cube_000
+    4300010: Circle
     7400000: Default Take
     7400002: Boost
     7400004: Boost_001
@@ -256,6 +259,7 @@ ModelImporter:
     13700004: Cube_003
     13700006: Cube_005
     13700008: runibroom
+    13700010: Circle
   materials:
     importMaterials: 1
     materialName: 0
