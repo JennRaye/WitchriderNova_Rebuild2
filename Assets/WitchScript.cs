@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WitchScript : MonoBehaviour {
+
+	public enum WitchCharacters {Runi, Loda, Faye, SugarSpice, Ricky, Atlas, Gretchen, Jewel };
+	public WitchCharacters WitchChar;
+	public GameObject[] WitchModels;
+
+
 	public float speed;
 	public float Acceleration;
 	public float SlowdownAcceleration;
@@ -33,7 +39,8 @@ public class WitchScript : MonoBehaviour {
 
 
 	public Vector3 VelocitySave;
-
+	public GameObject CameraObjToInstantiate;
+	public GameObject CameraObj;
 	public Transform CameraTrans;
 	public Transform CameraTarget;
 
@@ -59,6 +66,7 @@ public class WitchScript : MonoBehaviour {
 	public float CameraYRaise;
 	public float TurnSpeedDec;
 	public Transform WitchModel;
+	public GameObject WitchModelObject;
 	public float WitchTiltAngle;
 	public float WitchTiltAngleMax;
 	public float WitchTiltAngleSpeed;
@@ -68,9 +76,70 @@ public class WitchScript : MonoBehaviour {
 
 	public GameObject FrontCamera;
 	public bool FrontCamShow;
+
+
+
 	// public Quaternion thisRot;
 	void Start() {
 		controller = GetComponent<CharacterController>();
+
+
+		CameraObj = Instantiate (CameraObjToInstantiate, thisTrans);
+		CameraTrans = CameraObj.transform;
+
+
+
+		switch (WitchChar) {
+		case WitchCharacters.Runi:
+			WitchModelObject = Instantiate (WitchModels[0], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Loda:
+			WitchModelObject = Instantiate (WitchModels[1], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Faye:
+			WitchModelObject = Instantiate (WitchModels[2], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.SugarSpice:
+			WitchModelObject = Instantiate (WitchModels[3], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Ricky:
+			WitchModelObject = Instantiate (WitchModels[4], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Atlas:
+			WitchModelObject = Instantiate (WitchModels[5], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Gretchen:
+			WitchModelObject = Instantiate (WitchModels[6], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+
+		case WitchCharacters.Jewel:
+			WitchModelObject = Instantiate (WitchModels[7], thisTrans);
+			WitchModel = WitchModelObject.transform;
+			thisAnim = WitchModelObject.GetComponent<Animator> ();
+			break;
+		}
+
+
 	}
 
 	void FixedUpdate() {
