@@ -65,12 +65,24 @@ public class WitchScript : MonoBehaviour {
 	public float BobbingHeight;
 	public float BobbingSpeed;
 	public int BobbingMode;
+
+	public GameObject FrontCamera;
+	public bool FrontCamShow;
 	// public Quaternion thisRot;
 	void Start() {
 		controller = GetComponent<CharacterController>();
 	}
 
 	void FixedUpdate() {
+
+
+		if (Input.GetKeyDown ("0")) {
+			FrontCamShow = !FrontCamShow;
+			FrontCamera.SetActive (FrontCamShow);
+		}
+
+
+
 		moveDirection = new Vector3 (0, 0, 0);
 		if (controller.isGrounded) {
 			
