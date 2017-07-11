@@ -23,11 +23,17 @@ public class WitchScript : MonoBehaviour {
 
 
 
+	public float gravity;
+
 
 	public float flySpeed;
-	public float gravity;
 	public float flySpeed2;
 	public float flyTopSpeed;
+
+
+	public float dropSpeed;
+	public float dropSpeed2;
+	public float dropTopSpeed;
 
 
 	private Vector3 moveDirection = Vector3.zero;
@@ -76,7 +82,7 @@ public class WitchScript : MonoBehaviour {
 
 	public GameObject FrontCamera;
 	public bool FrontCamShow;
-
+	public int VerticalDown;
 
 
 	// public Quaternion thisRot;
@@ -309,10 +315,25 @@ public class WitchScript : MonoBehaviour {
 
 
 
+		if (Input.GetAxis ("Vertical") != 0) {
+			if (VerticalDown < 2)
+				VerticalDown += 1;
+		} else
+			VerticalDown = 0;
 
-		if (Input.GetButtonDown ("Fly")) {
-			if (flySpeed < 0)
-				flySpeed = 0;
+
+		if (Input.GetAxis ("Vertical") < 0) if (VerticalDown == 1) {
+			if (controller.isGrounded) {
+				
+				if (flySpeed < 0)
+					flySpeed = 0;
+			}
+		}
+
+
+		if (Input.GetAxis ("Vertical") > 0) if (VerticalDown == 1) {
+		//	if (flySpeed > 0)
+		//		flySpeed = 0;
 		}
 
 
@@ -373,16 +394,36 @@ public class WitchScript : MonoBehaviour {
 
 
 
-		if (Input.GetButton ("Fly")) {
+		if (Input.GetAxis ("Vertical") < 0) {
 			if (flySpeed < flyTopSpeed) {
 				flySpeed += Time.deltaTime * flySpeed2;
 			} else
 				flySpeed = flyTopSpeed;
-		} else {
-			if (flySpeed > gravity) {
-				flySpeed -= Time.deltaTime * flySpeed2;
+		} else if (Input.GetAxis ("Vertical") > 0) {
+
+
+
+
+			if (flySpeed > dropTopSpeed) {
+				flySpeed += Time.deltaTime * dropSpeed2;
 			} else
-				flySpeed = gravity;
+				flySpeed = dropTopSpeed;
+
+
+		}
+
+		else {
+
+
+			flySpeed = Mathf.Lerp (flySpeed, gravity, Time.deltaTime * 2);
+//			if (flySpeed > gravity) {
+//				flySpeed -= Time.deltaTime * flySpeed2;
+//			} else
+//				flySpeed = gravity;
+		}
+
+		if (Input.GetAxis ("Vertical") < 0) {
+
 		}
 		//	moveDirection.y = jumpSpeed * Time.deltaTime;
 
