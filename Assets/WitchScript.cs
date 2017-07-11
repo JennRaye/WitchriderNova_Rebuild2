@@ -458,6 +458,10 @@ public class WitchScript : MonoBehaviour {
 		CameraTrans.rotation = new Quaternion( Mathf.Lerp(CameraTrans.rotation.x, CameraTarget.rotation.x, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.y, CameraTarget.rotation.y, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.z, CameraTarget.rotation.z, Time.deltaTime*CameraRotSpeed), Mathf.Lerp(CameraTrans.rotation.w, CameraTarget.rotation.w, Time.deltaTime*CameraRotSpeed) );
 		// Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y, Time.deltaTime*(CameraSpeed/2f))
 			CameraTrans.position = new Vector3( Mathf.Lerp(CameraTrans.position.x, CameraTarget.position.x, Time.deltaTime*CameraSpeed), Mathf.Lerp(CameraTrans.position.y, CameraTarget.position.y+CameraYRaise, Time.deltaTime*(CameraSpeed*2f)), Mathf.Lerp(CameraTrans.position.z, CameraTarget.position.z, Time.deltaTime*CameraSpeed) );
+
+
+
+
 		if (controller.isGrounded == false)
 			BobbingMode = 1;
 		
