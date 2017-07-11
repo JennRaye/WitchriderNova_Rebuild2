@@ -16,6 +16,9 @@ ModelImporter:
     100016: Island08
     100018: Island09
     100020: //RootNode
+    100022: Island10
+    100024: Island11
+    100026: Island12
     400000: Island00
     400002: Island01
     400004: Island02
@@ -27,6 +30,9 @@ ModelImporter:
     400016: Island08
     400018: Island09
     400020: //RootNode
+    400022: Island10
+    400024: Island11
+    400026: Island12
     2300000: Island00
     2300002: Island01
     2300004: Island02
@@ -37,6 +43,9 @@ ModelImporter:
     2300014: Island07
     2300016: Island08
     2300018: Island09
+    2300020: Island10
+    2300022: Island11
+    2300024: Island12
     3300000: Island00
     3300002: Island01
     3300004: Island02
@@ -47,6 +56,9 @@ ModelImporter:
     3300014: Island07
     3300016: Island08
     3300018: Island09
+    3300020: Island10
+    3300022: Island11
+    3300024: Island12
     4300000: Island09
     4300002: Island08
     4300004: Island07
@@ -57,6 +69,9 @@ ModelImporter:
     4300014: Island03
     4300016: Island01
     4300018: Island00
+    4300020: Island11
+    4300022: Island10
+    4300024: Island12
     7400000: Default Take
     9500000: //RootNode
   materials:
