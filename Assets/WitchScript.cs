@@ -462,6 +462,7 @@ public class WitchScript : MonoBehaviour {
 		WitchModel.position = new Vector3 (WitchModel.position.x, thisTrans.position.y + BobbingHeight, WitchModel.position.z);
 
 	}
+
 	public void HitBoostRing(){
 		SpeedBoost = 4;
 		Debug.Log ("hit!");
