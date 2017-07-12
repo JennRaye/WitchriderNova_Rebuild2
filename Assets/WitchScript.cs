@@ -57,9 +57,6 @@ public class WitchScript : MonoBehaviour {
 	public Animator thisAnim;
 
 	public float SpeedBoost;
-	public float BoostTopSpeed;
-	public float BoostActualTopSpeed;
-	public float BoostCoolOffSpeed;
 
 	public float TurnFl;
 	public float AccelFl;
@@ -180,34 +177,8 @@ public class WitchScript : MonoBehaviour {
 
 
 
-//		else if (Input.GetAxis ("Accelerate") < 0) {
-//			if (speed > 0)
-//				speed -= SlowdownAcceleration*2f * Time.deltaTime;
-//			else
-//				speed = 0;
-//		}
-	
 
-//		} else {
-//			if (speed > 0)
-//				speed -= SlowdownAcceleration * Time.deltaTime;
-//			else
-//				speed = 0;
-//		}
-
-		if (SpeedBoost > 0)
-			SpeedBoost -= Time.deltaTime * BoostCoolOffSpeed;
-		else
-			SpeedBoost = 0;
-
-
-
-		if (SpeedBoost > BoostTopSpeed) {
-
-			moveDirection = new Vector3(moveDirection.x, moveDirection.y, (speed + BoostTopSpeed) * Time.deltaTime);
-		}
-		else 
-			moveDirection = new Vector3(moveDirection.x, moveDirection.y, (speed + SpeedBoost) * Time.deltaTime);
+			moveDirection = new Vector3(moveDirection.x, moveDirection.y, (speed) * Time.deltaTime);
 
 
 
@@ -433,6 +404,12 @@ public class WitchScript : MonoBehaviour {
 		// moveDirection.y -= gravity * Time.deltaTime;
 
 
+		if (SpeedBoost > 1) {
+			SpeedBoost -= Time.deltaTime * 2;
+		} else
+			SpeedBoost = 1;
+		
+		moveDirection *= SpeedBoost;
 		controller.Move(moveDirection * Time.deltaTime);
 
 		if (controller.isGrounded == false) {
@@ -485,13 +462,16 @@ public class WitchScript : MonoBehaviour {
 		WitchModel.position = new Vector3 (WitchModel.position.x, thisTrans.position.y + BobbingHeight, WitchModel.position.z);
 
 	}
-
+	public void HitBoostRing(){
+		SpeedBoost = 4;
+		Debug.Log ("hit!");
+	}
 
 	void OnControllerColliderEnter(ControllerColliderHit hit){
-		if (hit.gameObject.tag == "BoostRing"){
-			SpeedBoost = BoostActualTopSpeed;
-			Debug.Log ("hit!");
-		}
+//		if (hit.gameObject.tag == "BoostRing"){
+//			SpeedBoost = BoostActualTopSpeed;
+//			Debug.Log ("hit!");
+//		}
 	}
 
 
