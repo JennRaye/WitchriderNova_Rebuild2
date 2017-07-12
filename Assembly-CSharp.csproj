@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BeamScript.cs" />
      <Compile Include="Assets\BoostRingScript.cs" />
      <Compile Include="Assets\CameraFacePlayer.cs" />
      <Compile Include="Assets\WitchScript.cs" />
