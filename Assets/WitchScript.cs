@@ -88,6 +88,7 @@ public class WitchScript : MonoBehaviour {
 
 
 		CameraObj = Instantiate (CameraObjToInstantiate, thisTrans);
+		CameraObj.transform.parent = null;
 		CameraTrans = CameraObj.transform;
 
 
@@ -156,10 +157,6 @@ public class WitchScript : MonoBehaviour {
 
 
 		moveDirection = new Vector3 (0, 0, 0);
-		if (controller.isGrounded) {
-			
-
-		}
 
 
 		// if (Input.GetAxis ("Horizontal") == 0) {
@@ -393,9 +390,7 @@ public class WitchScript : MonoBehaviour {
 //				flySpeed = gravity;
 		}
 
-		if (Input.GetAxis ("Vertical") < 0) {
 
-		}
 		//	moveDirection.y = jumpSpeed * Time.deltaTime;
 
 		moveDirection.y = flySpeed;
@@ -408,8 +403,12 @@ public class WitchScript : MonoBehaviour {
 			SpeedBoost -= Time.deltaTime * 2;
 		} else
 			SpeedBoost = 1;
-		
-		moveDirection *= SpeedBoost;
+
+
+
+
+			moveDirection *= SpeedBoost;
+
 		controller.Move(moveDirection * Time.deltaTime);
 
 		if (controller.isGrounded == false) {
@@ -465,7 +464,6 @@ public class WitchScript : MonoBehaviour {
 
 	public void HitBoostRing(){
 		SpeedBoost = 4;
-		Debug.Log ("hit!");
 	}
 
 	void OnControllerColliderEnter(ControllerColliderHit hit){
