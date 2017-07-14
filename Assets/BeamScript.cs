@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BeamScript : MonoBehaviour {
 	public Vector2 MinAxis;
 	public Vector2 MaxAxis;
@@ -10,6 +11,7 @@ public class BeamScript : MonoBehaviour {
 	public Transform thisTrans;
 
 	public float ChangeTimer;
+
 	// Use this for initialization
 	void Start () {
 		
