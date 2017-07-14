@@ -8,6 +8,8 @@ public class BeamScript : MonoBehaviour {
 	public Vector2 DirectionMove;
 	public float DirectionSpeed;
 	public Transform thisTrans;
+
+	public float ChangeTimer;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,12 +21,25 @@ public class BeamScript : MonoBehaviour {
 		if (thisTrans.position.x > MaxAxis.x) DirectionMove = new Vector2 (-1f, DirectionMove.y);
 		if (thisTrans.position.z < MinAxis.y) DirectionMove = new Vector2 (DirectionMove.x, 1f);
 		if (thisTrans.position.z > MaxAxis.y) DirectionMove = new Vector2 (DirectionMove.x, -1f);
-	}
 
+		//ChangeTimer += Time.deltaTime;
+		//if (ChangeTimer >= 4) {
+		//	ResetDirection ();
+		//}
+
+		if (DirectionMove.x == 0 && DirectionMove.y == 0) {
+			ResetDirection ();
+		}
+	}
+	void ResetDirection(){
+		DirectionMove = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+		ChangeTimer = 0;
+	}
 	void OnTriggerEnter(Collider hit){
 		if (hit.gameObject.tag == "WitchPlayer") {
 			thisTrans.position = new Vector3 (Random.Range (MinAxis.x, MaxAxis.x), 0, Random.Range (MinAxis.y, MaxAxis.y));
-			DirectionMove = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+			ResetDirection ();
+
 		}
 	}
 }
