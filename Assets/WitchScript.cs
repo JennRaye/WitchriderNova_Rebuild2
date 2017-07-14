@@ -401,8 +401,11 @@ public class WitchScript : MonoBehaviour {
 
 		if (SpeedBoost > 1) {
 			SpeedBoost -= Time.deltaTime * 2;
-		} else
+			gravity = 0;
+		} else {
 			SpeedBoost = 1;
+			gravity = -90;
+		}
 
 
 
@@ -464,6 +467,9 @@ public class WitchScript : MonoBehaviour {
 
 	public void HitBoostRing(){
 		SpeedBoost = 4;
+		if (flySpeed < 0) {
+			flySpeed = 0;
+		}
 	}
 
 	void OnControllerColliderEnter(ControllerColliderHit hit){
