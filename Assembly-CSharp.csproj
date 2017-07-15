@@ -52,6 +52,8 @@
      <Compile Include="Assets\Waterfall2.cs" />
      <Compile Include="Assets\WitchScript.cs" />
      <Compile Include="Assets\bgrotate.cs" />
+     <Compile Include="Assets\characterselect.cs" />
+     <Compile Include="Assets\characterviewer.cs" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
