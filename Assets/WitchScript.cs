@@ -38,7 +38,7 @@ public class WitchScript : MonoBehaviour {
 	public float dropTopSpeed;
 
 
-	private Vector3 moveDirection = Vector3.zero;
+	public Vector3 moveDirection = Vector3.zero;
 	public CharacterController controller;
 	public Transform thisTrans;
 
@@ -83,6 +83,9 @@ public class WitchScript : MonoBehaviour {
 	public bool FrontCamShow;
 	public int VerticalDown;
 	public NetworkBehaviour PlayerController;
+
+	//  [SyncVar]
+	public Vector3 VelocityNetSave;
 
 	// public Quaternion thisRot;
 	void Start() {
@@ -149,6 +152,14 @@ public class WitchScript : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+
+
+
+
+
+
+
+
 
 		if (PlayerController.isLocalPlayer == true) {
 			CameraObj.SetActive (true);
@@ -465,7 +476,11 @@ public class WitchScript : MonoBehaviour {
 
 
 			WitchModel.position = new Vector3 (WitchModel.position.x, thisTrans.position.y + BobbingHeight, WitchModel.position.z);
+			//
 		} else {
+			
+
+			// controller.Move (moveDirection * Time.deltaTime);
 			CameraObj.SetActive (false);
 		}
 	}
