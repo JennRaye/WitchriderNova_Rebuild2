@@ -47,10 +47,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BeamScript.cs" />
+     <Compile Include="Assets\BeamScriptNet.cs" />
      <Compile Include="Assets\BoostRingScript.cs" />
      <Compile Include="Assets\CameraFacePlayer.cs" />
+     <Compile Include="Assets\CustomNetworkTrans.cs" />
+     <Compile Include="Assets\NetworkMaster.cs" />
      <Compile Include="Assets\Waterfall2.cs" />
      <Compile Include="Assets\WitchScript.cs" />
+     <Compile Include="Assets\WitchScriptNet.cs" />
      <Compile Include="Assets\bgrotate.cs" />
      <Compile Include="Assets\characterselect.cs" />
      <Compile Include="Assets\characterviewer.cs" />
