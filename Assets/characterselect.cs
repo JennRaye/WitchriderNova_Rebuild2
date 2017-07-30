@@ -7,15 +7,14 @@ public class characterselect : MonoBehaviour {
 	public float currentcharacter;
 	public float charactertotal;
 	private bool pressed;
+	public bool fadein;
 
 	// Use this for initialization
 	void Start () {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-		
-		currentcharacter = Mathf.Abs(currentcharacter % charactertotal);
+	void Update () {
 
 		if (Input.GetAxis ("Horizontal") == 0 && pressed == true){
 			pressed = false;
@@ -24,11 +23,18 @@ public class characterselect : MonoBehaviour {
 		if (Input.GetAxis ("Horizontal") > 0 && pressed == false) {
 			pressed = true;
 			currentcharacter += 1;
+			if (fadein == false) {
+				fadein = true;
+			}
 		}
 	
 		if (Input.GetAxis ("Horizontal") < 0 && pressed == false) {
 			pressed = true;
 			currentcharacter -= 1;
+			if (fadein == false) {
+				fadein = true;
+			}
 		}
+		currentcharacter = (currentcharacter % charactertotal + charactertotal)%charactertotal;
 	}
 }

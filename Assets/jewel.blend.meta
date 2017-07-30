@@ -65,6 +65,14 @@ ModelImporter:
     100114: Upperback
     100116: Wrist_l
     100118: Wrist_r
+    100120: Plane
+    100122: BezierCircle
+    100124: BezierCircle_001
+    100126: BezierCurve
+    100128: BezierCurve_001
+    100130: BezierCurve_005
+    100132: BezierCurve_006
+    100134: BezierCurve_007
     400000: Armature
     400002: Armature_001
     400004: Bone
@@ -125,17 +133,48 @@ ModelImporter:
     400114: Upperback
     400116: Wrist_l
     400118: Wrist_r
+    400120: Plane
+    400122: BezierCircle
+    400124: BezierCircle_001
+    400126: BezierCurve
+    400128: BezierCurve_001
+    400130: BezierCurve_005
+    400132: BezierCurve_006
+    400134: BezierCurve_007
     2300000: jewelhair
+    2300002: BezierCircle
+    2300004: BezierCircle_001
+    2300006: BezierCurve
+    2300008: BezierCurve_001
+    2300010: BezierCurve_005
+    2300012: BezierCurve_006
     3300000: jewelhair
+    3300002: BezierCircle
+    3300004: BezierCircle_001
+    3300006: BezierCurve
+    3300008: BezierCurve_001
+    3300010: BezierCurve_005
+    3300012: BezierCurve_006
     4300000: runibroom_001
     4300002: Cube_002
     4300004: Cube_000
     4300006: jewelhair
+    4300008: Plane
+    4300010: BezierCurve_005
+    4300012: BezierCircle_001
+    4300014: BezierCircle
+    4300016: BezierCurve
+    4300018: BezierCurve_006
+    4300020: BezierCurve_001
+    4300022: BezierCurve_007
     7400000: Default Take
     9500000: //RootNode
     13700000: Cube_000
     13700002: Cube_002
     13700004: runibroom_001
+    13700006: Plane
+    13700008: BezierCurve_006
+    13700010: BezierCurve_007
   materials:
     importMaterials: 1
     materialName: 0
