@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Networking;
 
 public class BeamScript : MonoBehaviour {
 	public Vector2 MinAxis;
@@ -11,7 +11,7 @@ public class BeamScript : MonoBehaviour {
 	public Transform thisTrans;
 
 	public float ChangeTimer;
-
+	public bool UpdateOnline;
 	// Use this for initialization
 	void Start () {
 		
@@ -39,8 +39,11 @@ public class BeamScript : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider hit){
 		if (hit.gameObject.tag == "WitchPlayer") {
-			thisTrans.position = new Vector3 (Random.Range (MinAxis.x, MaxAxis.x), 0, Random.Range (MinAxis.y, MaxAxis.y));
-			ResetDirection ();
+			if (hit.gameObject.GetComponent<WitchScriptNet> ().isLocalPlayer == true) {
+				thisTrans.position = new Vector3 (Random.Range (MinAxis.x, MaxAxis.x), 0, Random.Range (MinAxis.y, MaxAxis.y));
+				ResetDirection ();
+				UpdateOnline = true;
+			}
 
 		}
 	}
